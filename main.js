@@ -8,7 +8,7 @@ function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
     width: 800,
-    height: 600,
+    height: 800,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true
@@ -16,7 +16,12 @@ function createWindow () {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html');
+  mainWindow.loadFile('viewer.html');
+  // disabled_dir=./mods-disabled/
+  // enabled_dir=./mods/
+  // (do-not-use) dependancies_file=lmm-depends.json
+  // context_file=lmm-context.json {name?,desc?,depends?}
+  // context_path=<enabled_dir>/<mod>/
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
