@@ -11,7 +11,7 @@
   "author": "TheDataSeeker",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^8.2.3"
+    "electron": "^11.5.0"
   },
   "dependencies": {
     "dualshock": "^3.1.4",
